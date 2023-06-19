@@ -1,0 +1,42 @@
+-- vim.cmd [[ colorscheme catppuccin-macchiato ]]
+--
+-- -- LOAD feline theme
+-- vim.api.nvim_create_autocmd("ColorScheme", {
+--     pattern = "*",
+--     callback = function()
+--         package.loaded["feline"] = nil
+--         package.loaded["catppuccin.groups.integrations.feline"] = nil
+--         require("feline").setup {
+--             components = require("catppuccin.groups.integrations.feline").get(),
+--         }
+--     end,
+-- })
+--
+-- require("catppuccin").setup({
+--   flavour = "macchiato",
+--   transparent_background = true,
+--   integrations = {
+--     which_key = { enabled = true, border = false },
+--     telescope = true,
+--     gitsigns = true,
+--     cmp = true,
+--     nvimtree = true,
+--     harpoon = true,
+--     mason = true,
+--     treesitter = true,
+--     -- noice = true,
+--     dap = {
+--       enabled = true,
+--       enable_ui = true,
+--     },
+--     native_lsp = {
+--       enabled = true,
+--       underlines = {
+--         errors = { "undercurl" },
+--         hints = { "undercurl" },
+--         warnings = { "undercurl" },
+--         information = { "undercurl" },
+--       },
+--     },
+--   },
+-- })
